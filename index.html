@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+<title>Doblas survey form</title>
+  </head>
+  <body>
+    <h1 id="title">Doblas survey form</h1>
+    <p id="description">Let us know what do you think about our town after your holidays</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal information</legend>
+        <label id="name-label" for="name">Name
+          <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+          <label id="email-label" for="email">Email
+          <input id="email" name="email" type="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label" for="age">Age
+          <input id="number" name="age" type="number" placeholder="Enter your age" required min="13" max="120"/>
+        </label>
+        <label id="select-label" for="find-us">How did you find us?
+          <select id="dropdown" name="find-us">
+            <option value="">select one</option>
+            <option value="1">Relatives or friends</option>
+            <option value="2">News</option>
+            <option value="3">Advertisements</option>
+          </select>
+      </fieldset>
+      <fieldset>
+        <legend>From 1 to 5, how much would you recommend visit our town?</legend>
+        <label id="option-label" for="recommend">
+          <input id="reccomend-1" name="recommend" type="radio" class="inline" value="1"> 
+          </input> 1
+        </label>
+        <label id="option-label" for="recommend">
+          <input id="reccomend-2" name="recommend" type="radio" class="inline" value="2"> 
+          </input> 2
+        </label>
+        <label id="option-label" for="recommend">
+          <input id="reccomend-3" name="recommend" type="radio" class="inline" value="3" checked> 
+          </input> 3
+        </label>
+        <label id="option-label" for="recommend">
+          <input id="reccomend-4" name="recommend" type="radio" class="inline" value="4"> 
+          </input> 4
+        </label>
+        <label id="option-label" for="recommend">
+          <input id="reccomend-5" name="recommend" type="radio" class="inline" value="5"> 
+          </input> 5
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Which of our local products did you try?</legend>
+        <label id="checkbox1-label" for="honey">
+          <input name="honey" value="0" type="checkbox" class="inline"/>
+          Honey
+        </label>
+        <label id="checkbox2-label" for="milk">
+          <input name="milk" value="1" type="checkbox" class="inline"/>
+          Milk
+        </label>
+        <label id="checkbox3-label" for="cheese">
+          <input name="cheese" value="3" type="checkbox" class="inline"/>
+          Cheese
+        </label>
+        <label id="checkbox4-label" for="roast-meet">
+          <input name="roast-meat" value="3" type="checkbox" class="inline"/>
+          Roast Meat
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Let us know what do you think</legend>
+        <label id="textarea-label" for="opinion-box">
+          <textarea id="opinion-box" name="opinion-box" rows="3" cols="30" placeholder="I enjoyed the train station museum..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit"/>
+    </form>
+  </body>
+</html>
